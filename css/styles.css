@@ -1,0 +1,102 @@
+/* ==========================================================================
+   VJIT ACM Student Chapter — Institutional Academic Stylesheet
+   High-Contrast Light-Mode Editorial Design System (WCAG AA + Print Ready)
+   ========================================================================== */
+
+:root {
+    --bg-white: #FFFFFF;
+    --bg-slate: #F8FAFC;
+    --border-card: #CBD5E1;
+    --border-subtle: #E2E8F0;
+    --acm-navy: #0A2540;
+    --acm-blue: #0085CA;
+    --acm-hover: #006BA6;
+    --vjit-crimson: #C8102E;
+    --text-primary: #1E293B;
+    --text-muted: #475569;
+}
+
+body {
+    background-color: var(--bg-white);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clean 1px bordered institutional card — zero thick side stripes, zero shadows */
+.panel {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-card);
+}
+
+/* Primary Navigation Links */
+.nav-link {
+    color: #334155;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-link:hover {
+    color: var(--acm-blue);
+}
+
+.nav-link.active {
+    color: var(--acm-blue);
+    border-bottom-color: var(--acm-blue);
+    font-weight: 600;
+}
+
+.mobile-nav-link.active {
+    color: var(--acm-blue);
+    background-color: var(--bg-slate);
+    font-weight: 600;
+}
+
+/* Print-Friendly Stylesheet for NAAC / NBA / Departmental Record Auditing */
+@media print {
+    body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 10.5pt;
+    }
+
+    .no-print,
+    #top-utility-bar,
+    #main-navbar,
+    #mobile-drawer,
+    .filter-bar,
+    footer {
+        display: none !important;
+    }
+
+    /* When printing a specific Event Report or Circular modal, isolate the modal */
+    body.printing-modal > *:not(#shared-modals-root) {
+        display: none !important;
+    }
+
+    body.printing-modal #shared-modals-root > div.hidden {
+        display: none !important;
+    }
+
+    body.printing-modal #event-report-modal,
+    body.printing-modal #circular-preview-modal {
+        position: static !important;
+        display: block !important;
+        background: #FFFFFF !important;
+        padding: 0 !important;
+    }
+
+    body.printing-modal .modal-body-scroll {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .panel {
+        border: 1px solid #94A3B8 !important;
+        break-inside: avoid;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+}

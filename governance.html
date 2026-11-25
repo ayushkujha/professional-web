@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Committee &amp; Governance | VJIT ACM Student Chapter</title>
+    <meta name="description" content="Patrons, Faculty Sponsors, and Student Executive Office Bearers (2026–2027) of the ACM Student Chapter at Vidya Jyothi Institute of Technology (VJIT).">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+                        serif: ['Merriweather', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        acm: { navy: '#0A2540', blue: '#0085CA', hover: '#006BA6' },
+                        vjit: { crimson: '#C8102E' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col bg-white text-slate-800">
+
+    <!-- 1. TOP INSTITUTIONAL UTILITY BAR -->
+    <div id="top-utility-bar" class="bg-[#F8FAFC] text-slate-600 text-xs border-b border-[#CBD5E1]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-2 flex flex-col sm:flex-row justify-between items-center gap-1.5">
+            <div class="text-center sm:text-left">
+                Affiliated with Department of CSE (AI &amp; ML), VJIT <span class="text-slate-300 mx-1.5">|</span> JNTUH Autonomous Institution, Aziz Nagar, Hyderabad
+            </div>
+            <div class="flex items-center gap-4 text-slate-600">
+                <a href="https://vjit.ac.in" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">vjit.ac.in</a>
+                <span class="text-slate-300">|</span>
+                <a href="https://www.acm.org" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">acm.org</a>
+                <span class="text-slate-300">|</span>
+                <a href="https://india.acm.org" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">india.acm.org</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. TRI-LOGO INSTITUTIONAL HEADER & NAVBAR -->
+    <header class="bg-white border-b border-[#CBD5E1] sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="py-4 flex items-center justify-between gap-4 border-b border-slate-200">
+                <div class="flex items-center gap-4 sm:gap-5 min-w-0">
+                    <a href="https://vjit.ac.in" target="_blank" rel="noopener noreferrer" class="shrink-0" title="Vidya Jyothi Institute of Technology">
+                        <img src="VJIT-Logo.jpg" alt="VJIT Logo" class="h-11 sm:h-14 w-auto object-contain">
+                    </a>
+                    <div class="h-10 w-px bg-slate-200 shrink-0"></div>
+                    <a href="index.html" class="flex items-center gap-3.5 min-w-0">
+                        <picture class="shrink-0">
+                            <source srcset="acmvjitlogo.jxl" type="image/jxl">
+                            <img src="acmvjitlogo.png" alt="ACM VJIT Student Chapter Seal" class="h-12 w-12 sm:h-14 sm:w-14 object-contain">
+                        </picture>
+                        <div class="min-w-0">
+                            <p class="text-[11px] uppercase tracking-wider text-acm-blue font-semibold truncate">Association for Computing Machinery</p>
+                            <h1 class="font-serif text-lg sm:text-xl font-bold text-acm-navy leading-snug truncate">VJIT ACM Student Chapter</h1>
+                            <p class="text-xs text-slate-500 truncate">Department of Computer Science &amp; Engineering (AI &amp; ML)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4 shrink-0">
+                    <a href="https://www.acm.org" target="_blank" rel="noopener noreferrer" class="hidden sm:block" title="Association for Computing Machinery">
+                        <img src="acm_logo_tablet.svg" alt="Official ACM Diamond Logo" class="h-11 md:h-12 w-auto object-contain">
+                    </a>
+                    <button id="mobile-menu-toggle" type="button" onclick="toggleMobileDrawer()" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu" class="lg:hidden p-2 text-slate-700 hover:text-acm-blue border border-[#CBD5E1] bg-white cursor-pointer">
+                        <i class="fa-solid fa-bars text-base"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav id="main-navbar" aria-label="Primary Navigation" class="flex items-center justify-between h-12">
+                <div class="hidden lg:flex items-center h-full space-x-7 text-sm">
+                    <a href="index.html" class="nav-link h-full inline-flex items-center">Home</a>
+                    <a href="about.html" class="nav-link h-full inline-flex items-center">About</a>
+                    <a href="events.html" class="nav-link h-full inline-flex items-center">Events &amp; Archive</a>
+                    <a href="governance.html" class="nav-link active h-full inline-flex items-center">Governance</a>
+                    <a href="sigs.html" class="nav-link h-full inline-flex items-center">SIGs</a>
+                    <a href="membership.html" class="nav-link h-full inline-flex items-center">Membership</a>
+                    <a href="contact.html" class="nav-link h-full inline-flex items-center">Contact</a>
+                </div>
+                <div class="lg:hidden text-xs font-medium text-slate-600">
+                    Section: <span class="text-acm-navy font-semibold">Governance</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button type="button" onclick="window.print()" class="hidden md:inline-block text-xs text-slate-600 hover:text-acm-blue underline underline-offset-4 cursor-pointer">
+                        Print Roster
+                    </button>
+                    <button type="button" onclick="openMembershipModal()" class="bg-acm-blue hover:bg-acm-hover text-white text-xs font-semibold px-4 py-2 transition-colors cursor-pointer">
+                        Join Chapter
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Slide-Over Drawer -->
+        <div id="mobile-drawer" class="fixed inset-0 z-50 hidden lg:hidden" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+            <div class="fixed inset-0 bg-slate-900/40" onclick="closeMobileDrawer()"></div>
+            <div class="fixed inset-y-0 right-0 w-64 bg-white border-l border-[#CBD5E1] flex flex-col justify-between z-10">
+                <div>
+                    <div class="p-4 border-b border-[#CBD5E1] flex items-center justify-between">
+                        <img src="acm_logo_tablet.svg" alt="ACM Logo" class="h-9 w-auto object-contain">
+                        <button type="button" onclick="closeMobileDrawer()" aria-label="Close menu" class="p-1.5 text-slate-600 hover:text-acm-navy">
+                            <i class="fa-solid fa-xmark text-base"></i>
+                        </button>
+                    </div>
+                    <div class="py-2 divide-y divide-slate-100 text-sm">
+                        <a href="index.html" class="mobile-nav-link block px-5 py-3 text-slate-700">Home</a>
+                        <a href="about.html" class="mobile-nav-link block px-5 py-3 text-slate-700">About</a>
+                        <a href="events.html" class="mobile-nav-link block px-5 py-3 text-slate-700">Events &amp; Archive</a>
+                        <a href="governance.html" class="mobile-nav-link active block px-5 py-3 text-slate-700">Governance</a>
+                        <a href="sigs.html" class="mobile-nav-link block px-5 py-3 text-slate-700">SIGs</a>
+                        <a href="membership.html" class="mobile-nav-link block px-5 py-3 text-slate-700">Membership</a>
+                        <a href="contact.html" class="mobile-nav-link block px-5 py-3 text-slate-700">Contact</a>
+                    </div>
+                </div>
+                <div class="p-4 border-t border-[#CBD5E1] bg-[#F8FAFC]">
+                    <button type="button" onclick="closeMobileDrawer(); openMembershipModal();" class="w-full py-2 px-3 bg-acm-blue text-white text-xs font-semibold">
+                        Student Membership Form
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. EXECUTIVE COMMITTEE & GOVERNANCE CONTENT -->
+    <main class="flex-1">
+        <div class="bg-[#F8FAFC] border-b border-[#CBD5E1] py-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <p class="text-xs uppercase tracking-widest text-acm-blue font-semibold">Chapter Governance</p>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-acm-navy mt-1">Leadership &amp; Executive Committee (2026–2027)</h2>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 space-y-12">
+            <div>
+                <div class="border-b-2 border-acm-navy pb-2 mb-6 flex items-baseline justify-between">
+                    <h3 class="font-serif text-lg font-bold text-acm-navy">Patrons &amp; Institutional Leadership</h3>
+                    <span class="text-xs text-slate-500">Vidya Jyothi Institute of Technology</span>
+                </div>
+                <div id="governance-patrons-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+            </div>
+
+            <div>
+                <div class="border-b-2 border-acm-navy pb-2 mb-6 flex items-baseline justify-between">
+                    <h3 class="font-serif text-lg font-bold text-acm-navy">Convenor &amp; ACM Faculty Sponsors</h3>
+                    <span class="text-xs text-slate-500">Department of CSE (AI &amp; ML)</span>
+                </div>
+                <div id="governance-faculty-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </div>
+
+            <div>
+                <div class="border-b-2 border-acm-navy pb-2 mb-6 flex items-baseline justify-between">
+                    <h3 class="font-serif text-lg font-bold text-acm-navy">Student Office Bearers (2026–2027)</h3>
+                    <span class="text-xs text-slate-500">Elected Chapter Officers</span>
+                </div>
+                <div id="governance-bearers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </div>
+
+            <div>
+                <div class="border-b border-[#CBD5E1] pb-2 mb-5 flex items-baseline justify-between">
+                    <h3 class="font-serif text-base font-bold text-acm-navy">Core Committee &amp; Active Chapter Members</h3>
+                    <span class="text-xs text-slate-500">B.Tech CSE (AI &amp; ML)</span>
+                </div>
+                <div id="governance-members-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 4. 4-COLUMN INSTITUTIONAL FOOTER -->
+    <footer class="bg-[#F8FAFC] text-slate-700 border-t border-[#CBD5E1] mt-auto">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-[#CBD5E1]">
+                <div class="lg:col-span-4 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <picture class="shrink-0">
+                            <source srcset="acmvjitlogo.jxl" type="image/jxl">
+                            <img src="acmvjitlogo.png" alt="ACM VJIT Seal" class="h-11 w-11 object-contain">
+                        </picture>
+                        <div>
+                            <div class="font-serif font-bold text-acm-navy text-base">VJIT ACM Student Chapter</div>
+                            <div class="text-xs text-slate-500">Department of CSE (AI &amp; ML)</div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Vidya Jyothi Institute of Technology (Autonomous)<br>
+                        Aziz Nagar, C.B. Post, Hyderabad – 500075, Telangana, India.
+                    </p>
+                    <p class="text-xs text-slate-600">
+                        Email: <a href="mailto:acm@vjit.ac.in" class="text-acm-blue hover:underline">acm@vjit.ac.in</a> &middot; <a href="mailto:secretary@acmvjit.com" class="text-acm-blue hover:underline">secretary@acmvjit.com</a>
+                    </p>
+                </div>
+
+                <div class="lg:col-span-3 space-y-2.5">
+                    <h4 class="font-serif font-bold text-xs uppercase tracking-wider text-acm-navy">Chapter Charter</h4>
+                    <div class="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                        <p><strong>Parent Body:</strong> Association for Computing Machinery (ACM) &amp; ACM India Council</p>
+                        <p><strong>Host Dept:</strong> Computer Science &amp; Engineering (AI &amp; ML)</p>
+                        <p><strong>Faculty Sponsors:</strong> Mr. K. Srinivasa Rao &amp; Dr. I. S. Hephzi Punithavathi</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 space-y-2.5">
+                    <h4 class="font-serif font-bold text-xs uppercase tracking-wider text-acm-navy">Navigation</h4>
+                    <ul class="space-y-1.5 text-xs text-slate-600">
+                        <li><a href="index.html" class="hover:text-acm-blue">Home</a></li>
+                        <li><a href="about.html" class="hover:text-acm-blue">About Chapter</a></li>
+                        <li><a href="events.html" class="hover:text-acm-blue">Events &amp; Archive</a></li>
+                        <li><a href="governance.html" class="hover:text-acm-blue">Governance</a></li>
+                        <li><a href="sigs.html" class="hover:text-acm-blue">SIGs &amp; Resources</a></li>
+                        <li><a href="membership.html" class="hover:text-acm-blue">Membership</a></li>
+                        <li><a href="contact.html" class="hover:text-acm-blue">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 space-y-2.5">
+                    <h4 class="font-serif font-bold text-xs uppercase tracking-wider text-acm-navy">External Links &amp; Map</h4>
+                    <ul class="space-y-1.5 text-xs text-slate-600">
+                        <li><a href="https://vjit.ac.in" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">VJIT Official Portal (vjit.ac.in) &nearr;</a></li>
+                        <li><a href="https://www.acm.org" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">ACM Global (acm.org) &nearr;</a></li>
+                        <li><a href="https://india.acm.org" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">ACM India Council (india.acm.org) &nearr;</a></li>
+                        <li><a href="https://dl.acm.org" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">ACM Digital Library (dl.acm.org) &nearr;</a></li>
+                        <li class="pt-1">
+                            <a href="https://maps.google.com/?q=Vidya+Jyothi+Institute+of+Technology+Aziz+Nagar+Hyderabad+500075" target="_blank" rel="noopener noreferrer" class="text-acm-blue font-medium hover:underline">
+                                View VJIT Campus Map (Aziz Nagar) &nearr;
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+                <p>&copy; 2026–2027 VJIT ACM Student Chapter, Vidya Jyothi Institute of Technology. All Rights Reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/mohi2006august/ACMVJIT" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">GitHub</a>
+                    <span>&middot;</span>
+                    <a href="https://www.instagram.com/acmvjit/" target="_blank" rel="noopener noreferrer" class="hover:text-acm-blue">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="shared-modals-root"></div>
+    <script src="data/chapterData.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

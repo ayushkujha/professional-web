@@ -1,0 +1,19 @@
+{
+  "name": "acmvjit-institutional-portal",
+  "version": "1.0.0",
+  "description": "Official Institutional Portal for the ACM Student Chapter at Vidya Jyothi Institute of Technology (VJIT), Department of CSE (AI & ML), Hyderabad.",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve . -l 3000",
+    "start": "npx --yes serve . -l 3000",
+    "build": "echo \"Static multi-page portal ready for Vercel deployment\""
+  },
+  "keywords": [
+    "ACM",
+    "VJIT",
+    "Student Chapter",
+    "CSE AI & ML",
+    "Hyderabad"
+  ],
+  "license": "MIT"
+}
